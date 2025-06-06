@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+
+/* Style pour la page d'accueil */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    overflow-x: hidden;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Intro fixe */
+.intro {
+    width: 350px;
+    background-color: #112240;
+    padding: 40px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+    .intro h1 {
+        font-size: 2rem;
+        color: #64ffda;
+        margin-bottom: 20px;
+    }
+
+    .intro p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #8892b0;
+        margin-bottom: 20px;
+    }
+
+/* Contenu */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.bloc {
+    background: #233554;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+    .bloc:hover {
+        background: #2a3f66;
+    }
+
+/* Lumière sur la souris */
+.cursor-light {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(100, 255, 218, 0.15) 0%, transparent 70%);
+    mix-blend-mode: screen;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
