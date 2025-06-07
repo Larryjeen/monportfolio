@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Style de la navigation */
+nav {
+    top: 0;
+    position: sticky;
+}
+
+    nav ul {
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+        background-color: rgba(0,0,0,0.6);
+        display: flex;
+        flex-wrap: wrap;
+        padding: auto;
+    }
+
+    nav a {
+        margin: 10px 15px;
+        display: block;
+        padding: 15px 25px;
+        background-color: #ffffff;
+        color: #e9518e;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        width: 150px;
+    }
+
+        nav a:hover {
+            background-color: #eeeeee;
+        }
+
+        nav a.current {
+            background-color: #ffe200;
+            color: #e9518e;
+        }
